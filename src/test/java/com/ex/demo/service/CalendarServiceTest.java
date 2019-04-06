@@ -12,10 +12,15 @@ public class CalendarServiceTest {
 	@Test
 	public void testCalcDate() {
 		CalendarService cs = new CalendarService();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		
+		// テスト成功パターン
+		assertEquals(sdf.format(new Date()),cs.calcDate());
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.MONTH, 1);
-		SimpleDateFormat sdf = new SimpleDateFormat();
-		assertEquals(sdf.format(cal.getTime()),cs.calcDate());
+		//　テスト失敗パターン
+//		assertEquals(sdf.format(cal.getTime()),cs.calcDate());
 	}
 
 }
