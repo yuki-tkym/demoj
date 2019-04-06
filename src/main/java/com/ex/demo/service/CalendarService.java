@@ -5,12 +5,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class CalendarService {
-	public String calcDate(int month, int day) {
+	public String calcDate() {
 		Calendar cal = Calendar.getInstance();
-		
-		cal.add(Calendar.MONTH, month);
-		cal.add(Calendar.DATE, day);
-
 		Date exDate = cal.getTime();
 		SimpleDateFormat sdf = new SimpleDateFormat();
 		return sdf.format(exDate);
