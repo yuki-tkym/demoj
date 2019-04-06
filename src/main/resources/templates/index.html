@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2 th:text="#{content.title}">hello page</h2>
+	<p th:text="#{content.message}"></p>
+	<p th:text="${#dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm:ss')}"></p>
+	<p class="msg" th:utext="${msg}"></p>
+	</table>
+</body>
+</html>
