@@ -16,11 +16,11 @@ public class CalendarServiceTest {
 		SimpleDateFormat sdf = new SimpleDateFormat();
 		
 		// テスト成功パターン
-		assertEquals(sdf.format(new Date()),cs.calcDate());
+//		assertEquals(sdf.format(new Date()),cs.calcDate());
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.MONTH, 1);
 		//　テスト失敗パターン
-//		assertEquals(sdf.format(cal.getTime()),cs.calcDate());
+		assertEquals(sdf.format(cal.getTime()),cs.calcDate());
 	}
 
 }
