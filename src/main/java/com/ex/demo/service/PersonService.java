@@ -8,8 +8,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.data.Person;
-import com.example.demo.repository.PersonRepository;
+import com.ex.demo.data.Person;
+import com.ex.demo.repository.PersonRepository;
 
 @Service
 @Transactional
