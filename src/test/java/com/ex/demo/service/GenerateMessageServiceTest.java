@@ -16,8 +16,8 @@ public class GenerateMessageServiceTest {
 		String output = gms.output("Jenkins","Test");
 		
 		// テスト成功パターン
-		assertEquals("JenkinsTest", output);
+//		assertEquals("JenkinsTest", output);
 		//　テスト失敗パターン
-//		assertEquals("JenknsTest", output);
+		assertEquals("JenknsTest", output);
 	}
 }
