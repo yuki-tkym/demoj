@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.data.Person;
-import com.example.demo.repository.PersonRepository;
+import com.ex.demo.data.Person;
+import com.ex.demo.repository.PersonRepository;
 
 @Controller
 public class Sample4Controller {
